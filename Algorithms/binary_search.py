@@ -1,3 +1,7 @@
+"""
+Binary Search
+"""
+
 def binary_search(my_list:list, target:int):
     low = 0
     high = len(my_list) -1 
