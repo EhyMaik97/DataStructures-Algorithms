@@ -1,5 +1,6 @@
 """
 Selection Sort
+Complexity: O(n^2)
 """
 
 def find_smaller(arr):

@@ -1,5 +1,6 @@
 """
 Binary Search
+Complexity: O(logn)
 """
 
 def binary_search(my_list:list, target:int):
