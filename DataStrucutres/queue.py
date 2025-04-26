@@ -72,14 +72,9 @@ class Queue:
 if __name__ == "__main__":
     queue = Queue()
     queue.enqueue(10)
+    queue.enqueue(20)
+    queue.enqueue(30)
     queue.print_queue()
-    # queue.enqueue(20)
-    # queue.print_queue()
-    # queue.enqueue(30)
-    # queue.print_queue()
-    
-    # queue.dequeue()
-    # queue.print_queue()
-    # queue.dequeue()
-    # queue.print_queue()
+    queue.dequeue()
+    queue.print_queue()
     
