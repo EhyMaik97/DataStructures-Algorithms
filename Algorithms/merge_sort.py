@@ -3,8 +3,7 @@ Merge Sort
 Complexity Average case: O(n log n)
 """
 
-
-def merge_sort(arr):
+def merge_sort(arr: list):
     if len(arr) <= 1:
         return
 
@@ -17,6 +16,7 @@ def merge_sort(arr):
     merge_sort(right)
     
     merge_two_sorted_lists(left, right, arr)
+
 
 def merge_two_sorted_lists(a, b, arr):
     len_a = len(a)
@@ -45,15 +45,15 @@ def merge_two_sorted_lists(a, b, arr):
         j+=1
         k+=1
 
-if __name__ == '__main__':
-    test_cases = [
-        [10, 3, 15, 7, 8, 23, 98, 29],
-        [],
-        [3],
-        [9,8,7,2],
-        [1,2,3,4,5]
-    ]
 
-    for arr in test_cases:
-        merge_sort(arr)
-        print(arr)
+test_cases = [
+    [10, 3, 15, 7, 8, 23, 98, 29],
+    [],
+    [3],
+    [9,8,7,2],
+    [1,2,3,4,5]
+]
+
+for arr in test_cases:
+    merge_sort(arr)
+    print(arr)
